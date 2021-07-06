@@ -1,20 +1,12 @@
 "use strict"
+function mediumInArray(arr) {
+    let sum = 0;
 
-function sum(n){
-
-    if ( n > 0){
-        return n + sum(n-1);
+    for(let i=0; i<arr.length; i++){
+        sum += arr[i];
     }
 
-    else if(n < 0){
-        return n + sum(n+1);
-    }
+    return sum/arr.length
+};
 
-    else{
-        return 0;
-    }
-}
-
-console.log(sum(0));
-console.log(sum(6));
-console.log(sum(-3));
+  console.log(mediumInArray([1,2,3,4,5,6,7]))
