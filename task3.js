@@ -1,23 +1,14 @@
-function checkSort(arr){
-    let count = 0;
+"use strict"
 
-    for(let i = 0; i<arr.length-1; i++){
+function reverseStr(str){
+    let revStr = "";
 
-        for (let j=i+1; j<arr.length; j++){
+    for(let i = str.length-1; i>= 0; i-- ){
+        revStr += str[i]
+    }
 
-            if(arr[i] <= arr[j]){
-                count++;
-            }
-
-        };
-
-        if(count != arr.length-1){
-            return false;
-        }
-        
-        count = i+1;
-    };
-    return true;
+    return revStr;
 };
 
-console.log(checkSort([-2,0,0,1,2,3,3,5]))
+
+console.log(reverseStr("cdcaa"))
