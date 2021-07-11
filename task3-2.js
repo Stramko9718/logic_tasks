@@ -2,31 +2,27 @@
 
 let sarah = {
 
-    name: 'Sarah',
-    job: {
+  name: 'Sarah',
+  job: {
 
-      name: 'Andersen',
-      hiringDate: '23.07.2020'
+    name: 'Andersen',
+    hiringDate: '23.07.2020'
 
-    }
+  }
 
-  };
+};
   
 
 
-  function printJobName(user){
+function printJobName(user){
 
-    let { 
-        name: Username,
-        job: {
-
-        name: CompanyName,
-        hiringDate
-
+  const { 
+    job: {
+      name
     }
   } = sarah;
 
-  console.log(CompanyName);
+  console.log(name);
 
 };
 
