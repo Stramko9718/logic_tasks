@@ -14,14 +14,8 @@ let sarah = {
   
 
 
-function printJobName(user){
-
-  const { 
-    job: {
-      name
-    }
-  } = sarah;
-
+function printJobName({ job: {name} }){
+  
   console.log(name);
 
 };
